@@ -1,0 +1,13 @@
+.list__link {
+    text-decoration: none;
+    color: currentColor;
+}
+
+.list__link:hover {
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.list__link:focus {
+    outline: 2px solid #ffffff;
+}

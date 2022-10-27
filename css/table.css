@@ -1,0 +1,37 @@
+
+.table_cell {
+    border: 2px solid black;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.table__cell--header {
+    background-color: rgb(101, 2, 2);
+    color: white
+}
+
+.table__header {
+    background-color: rgba(0, 46, 19, 0.774);
+    color: white;
+}
+
+
+
+.table__row:nth-child(even) {
+    background-color: rgba(200, 198, 198, 0.848);
+}
+
+.table__row:hover {
+    background-color: rgb(154, 154, 154);
+}
+
+.table__container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
