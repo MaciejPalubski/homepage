@@ -1,18 +1,22 @@
-console.log("Hello World")
+{
+    const welcome = () => {
+        console.log("Hello World")
+    }
 
+    const toggleClass = () => {
 
+        const image = document.querySelector(".js-image");
+        const buttonName = document.querySelector(".buttonName");
 
+        image.classList.toggle("js-noImage");
+        buttonName.innerText = image.classList.contains("js-noImage") ? "Pokaż" : "Ukryj"
+    }
 
+    const init = () => {
+        const button = document.querySelector(".button");
+        button.addEventListener("click", toggleClass);
 
-
-let button = document.querySelector(".button");
-let image = document.querySelector(".js-image");
-let buttonName = document.querySelector(".buttonName");
-let title = document.querySelector(".title");
-
-button.addEventListener("click", () => {
-    image.classList.toggle("js-noImage");
-    buttonName.innerText = image.classList.contains("js-noImage") ? "Pokaż" : "Ukryj"
-
-});
-
+        welcome();
+    };
+    init();
+}    
